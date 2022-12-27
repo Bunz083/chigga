@@ -651,7 +651,7 @@ GameObject:
   - component: {fileID: 282674977}
   - component: {fileID: 282674976}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: Canvas22
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5068,6 +5068,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1830484223}
   m_CullTransparentMesh: 1
+--- !u!1 &1888029102 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6890982093996994014, guid: 9e2fc4172778247bdbc295bf4e68ef79, type: 3}
+  m_PrefabInstance: {fileID: 6890982092515830291}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1912770093
 GameObject:
   m_ObjectHideFlags: 0
@@ -6054,6 +6059,10 @@ PrefabInstance:
       propertyPath: HpBar
       value: 
       objectReference: {fileID: 404648117}
+    - target: {fileID: 7344310823759868745, guid: 7253147593ff04020937f085a5695485, type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 1888029102}
     - target: {fileID: 7344310823759868745, guid: 7253147593ff04020937f085a5695485, type: 3}
       propertyPath: StatusBar
       value: 
