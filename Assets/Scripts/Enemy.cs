@@ -7,6 +7,8 @@ using UnityEngine.UI;
 public class Enemy : MonoBehaviour
 {
     public GameObject target;
+    public Transform firepoint;
+    public GameObject bulletPrefab;
     private CharacterController cc;
 
     public float hp = 100;
@@ -21,30 +23,22 @@ public class Enemy : MonoBehaviour
 
     void Update()
     {
-       
-        Escape();
-    }
-
-    void Chase()
-    {
-        Vector3 dir = transform.position = target.transform.position;
-        cc.Move(dir.normalized * -5f * Time.deltaTime);
-    }
-
-    void Escape()
-    {
-
         float distance = Vector3.Distance(transform.position, target.transform.position);
 
-        if (distance < 5f) 
+        if (distance > 5f)
         {
             Vector3 dir = transform.position = target.transform.position;
-            cc.Move(dir.normalized * 5f * Time.deltaTime);
+            cc.Move(dir.normalized * -5f * Time.deltaTime);
 
         }
-       
+
+
+
     }
 
+    
+
+    
     private void OnTriggerEnter(Collider other)
     {
         // 如果碰撞到的是子彈
